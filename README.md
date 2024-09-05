@@ -2,9 +2,9 @@
 
 This repository contains three gRPC examples in Go:
 
-- **helloworld**
-- **routeguide**
-- **calculator**
+- **helloworld**: Simple gRPC
+- **routeguide**: Route guide with gRPC
+- **calculator**: Calculator with gRPC
 
 ## Prerequisites
 
@@ -30,6 +30,10 @@ Before running the examples, ensure you have the following installed:
 
 ## Usage
 
+Every example have each folder and need to cd before running script in Makefile
+
+`cd ./folder`
+
 ```makefile
 # Generate Protobuf files for calculator example
 gen-cal:
@@ -44,7 +48,7 @@ run-client:
 	go run client/client.go
 ```
 
-For running this command:
+For running these command:
 
 - Gen proto file: `make gen-cal`
 - Run server: `make run-server`
